@@ -1,0 +1,24 @@
+.hero {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 212px;
+    background-image: linear-gradient(47deg, #eb8a14 0%, #ecd55a 100%);
+    border-radius: 0 0 16px 16px;
+}
+
+.hero__container {
+
+}
+
+.hero__content {
+
+}
+
+.hero__title {
+}
+
+.hero__tagline {
+}
+
+.hero__order {
+}
