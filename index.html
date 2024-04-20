@@ -38,54 +38,60 @@
         <section class="toppings">
             <div class="container">
                 <h2 class="toppings__title">Choose a topping</h2>
+                <button class="toppings__button">
+                <span>Choose a topping</span>
+                <svg class="toppings__arrow" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 15.5L15.1962 6.5H4.80385L10 15.5Z" fill="#2C2826"/>
+                    </svg>                    
+                </button>
                 <ul class="toppings__list">
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Hard cheese">
-                        <label class="toppings__label">Hard cheese</label>
+                        <input class="toppings__checkbox" id="1" type="checkbox" value="Hard cheese" name="topping">
+                        <label class="toppings__label" for="1">Hard cheese</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Mozzarella">
-                        <label class="toppings__label">Mozzarella</label>
+                        <input class="toppings__checkbox" id="2" type="checkbox" value="Mozzarella" name="topping">
+                        <label class="toppings__label" for="2">Mozzarella</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Blue cheese">
-                        <label class="toppings__label">Blue cheese</label>
+                        <input class="toppings__checkbox" id="3" type="checkbox" value="Blue cheese" name="topping">
+                        <label class="toppings__label" for="3">Blue cheese</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Pepperoni">
-                        <label class="toppings__label">Pepperoni</label>
+                        <input class="toppings__checkbox" id="4" type="checkbox" value="Pepperoni" name="topping">
+                        <label class="toppings__label" for="4">Pepperoni</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Ham">
-                        <label class="toppings__label">Ham</label>
+                        <input class="toppings__checkbox" id="5" type="checkbox" value="Ham" name="topping">
+                        <label class="toppings__label" for="5">Ham</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Chicken">
-                        <label class="toppings__label">Chicken</label>
+                        <input class="toppings__checkbox" id="6" type="checkbox" value="Chicken" name="topping">
+                        <label class="toppings__label" for="6">Chicken</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Shrimp">
-                        <label class="toppings__label">Shrimp</label>
+                        <input class="toppings__checkbox" id="7" type="checkbox" value="Shrimp" name="topping">
+                        <label class="toppings__label" for="7">Shrimp</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Tomato">
-                        <label class="toppings__label">Tomato</label>
+                        <input class="toppings__checkbox" id="8" type="checkbox" value="Tomato" name="topping">
+                        <label class="toppings__label" for="8">Tomato</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Bell pepper">
-                        <label class="toppings__label">Bell pepper</label>
+                        <input class="toppings__checkbox" id="9" type="checkbox" value="Bell pepper" name="topping">
+                        <label class="toppings__label" for="9">Bell pepper</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Pineapple">
-                        <label class="toppings__label">Pineapple</label>
+                        <input class="toppings__checkbox" id="10" type="checkbox" value="Pineapple" name="topping">
+                        <label class="toppings__label" for="10">Pineapple</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Onion">
-                        <label class="toppings__label">Onion</label>
+                        <input class="toppings__checkbox" id="11" type="checkbox" value="Onion" name="topping">
+                        <label class="toppings__label" for="11">Onion</label>
                     </li>
                     <li class="topping__item">
-                        <input class="toppings__checkbox" type="checkbox" name="Mushrooms">
-                        <label class="toppings__label">Mushrooms</label>
+                        <input class="toppings__checkbox" type="checkbox" id="12" value="Mushrooms" name="topping">
+                        <label class="toppings__label" for="12">Mushrooms</label>
                     </li>
                 </ul>
             </div>
@@ -95,63 +101,73 @@
                 <h2 class="pizza__title">Pizza</h2>
                 <ul class="pizza__list">
                     <li class="pizza__item">
-                        <article class="pizza__card">
+                        <article class="card">
                             <img class="card__image" src="img/pizza-margherita.png" alt="margherita">
-                            <h3 class="card__title">Margherita</h3>
+                            <div class="card__content">
+                                <h3 class="card__title">Margherita</h3>
                             <p class="card__info">
                                 <span class="card__price">10$</span>
                                 <span>/</span>
                                 <span class="card__weight">25 sm</span>
                             </p>
                             <button class="card__button">Choose</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
-                        <article class="pizza__card">
+                        <article class="card">
                             <img class="card__image" src="img/pizza-margherita.png" alt="margherita">
-                            <h3 class="card__title">Margherita</h3>
+                            <div class="card__content">
+                                <h3 class="card__title">Margherita</h3>
                             <p class="card__info">
                                 <span class="card__price">10$</span>
                                 <span>/</span>
                                 <span class="card__weight">25 sm</span>
                             </p>
                             <button class="card__button">Choose</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
-                        <article class="pizza__card">
+                        <article class="card">
                             <img class="card__image" src="img/pizza-margherita.png" alt="margherita">
-                            <h3 class="card__title">Margherita</h3>
+                            <div class="card__content">
+                                <h3 class="card__title">Margherita</h3>
                             <p class="card__info">
                                 <span class="card__price">10$</span>
                                 <span>/</span>
                                 <span class="card__weight">25 sm</span>
                             </p>
                             <button class="card__button">Choose</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
-                        <article class="pizza__card">
+                        <article class="card">
                             <img class="card__image" src="img/pizza-margherita.png" alt="margherita">
-                            <h3 class="card__title">Margherita</h3>
+                            <div class="card__content">
+                                <h3 class="card__title">Margherita</h3>
                             <p class="card__info">
                                 <span class="card__price">10$</span>
                                 <span>/</span>
                                 <span class="card__weight">25 sm</span>
                             </p>
                             <button class="card__button">Choose</button>
+                            </div>
                         </article>
                     </li>
                     <li class="pizza__item">
-                        <article class="pizza__card">
+                        <article class="card">
                             <img class="card__image" src="img/pizza-margherita.png" alt="margherita">
-                            <h3 class="card__title">Margherita</h3>
+                            <div class="card__content">
+                                <h3 class="card__title">Margherita</h3>
                             <p class="card__info">
                                 <span class="card__price">10$</span>
                                 <span>/</span>
                                 <span class="card__weight">25 sm</span>
                             </p>
                             <button class="card__button">Choose</button>
+                            </div>
                         </article>
                     </li>
                 </ul>
@@ -177,5 +193,22 @@
         </div>
     </footer>
 </body>
+
+<script>
+    const toppingsButton = document.querySelector('.toppings__button');
+    const toppingsList = document.querySelector('.toppings__list');
+
+    toppingsButton.addEventListener('click', () => {
+        if(!toppingsList.classList.contains('toppings__list_show')) {
+            toppingsList.classList.add('toppings__list_show');
+            toppingsButton.classList.add('toppings__button_active');
+
+            toppingsList.style.maxWidth = toppingsList.scrollHeight
+        } else {
+            toppingsList.classList.remove('toppings__list_show');
+            toppingsButton.classList.remove('toppings__button_active')
+        }
+    })
+</script>
 
 </html>
