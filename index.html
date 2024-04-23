@@ -203,10 +203,15 @@
             toppingsList.classList.add('toppings__list_show');
             toppingsButton.classList.add('toppings__button_active');
 
-            toppingsList.style.maxWidth = toppingsList.scrollHeight
+            toppingsList.style.maxHeight = toppingsList.scrollHeight + 'px';
         } else {
-            toppingsList.classList.remove('toppings__list_show');
-            toppingsButton.classList.remove('toppings__button_active')
+            toppingsButton.classList.remove('toppings__button_active');
+            toppingsList.style.maxHeight = null;
+
+
+            setTimeout(() => {
+                toppingsList.classList.remove('toppings__list_show');
+            }, 300)
         }
     })
 </script>

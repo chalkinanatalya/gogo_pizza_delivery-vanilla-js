@@ -29,6 +29,9 @@
     display: none;
     flex-wrap: wrap;
     gap: 8px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3 ease;
 }
 
 .toppings__list_show {
