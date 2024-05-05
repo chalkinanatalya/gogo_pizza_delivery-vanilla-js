@@ -36,7 +36,7 @@ const getPizzas = async () => {
 const createCard = (data) => {
     console.log('data: ', data);
     const card = document.createElement('article');
-    card.classList.add('card');
+    card.classList.add('card', 'pizza__card');
     card.innerHTML = `
         <picture>
             <source srcset="${data.images[1]}" type="image/webp">
@@ -47,9 +47,9 @@ const createCard = (data) => {
             <p class="card__info">
                 <span class="card__price">${data.price['30cm']}$</span>
                 <span>/</span>
-                <span class="card__weight">25 cm</span>
+                <span class="card__weight">25 sm</span>
             </p>
-            <button class="card__button">Choose</button>
+            <button class="card__button" data-id="${data.id}">Choose</button>
         </div>
     `;
 
@@ -61,10 +61,10 @@ const renderPizzas = async () => {
     const pizzasList = document.querySelector('.pizza__list');
     pizzasList.textContent = '';
 
-    const items = pizzas.map( data => {
+    const items = pizzas.map( (data) => {
         const item = document.createElement('li');
         item.classList.add('pizza__item');
-        item.textContent = data.name.en;
+        // item.textContent = data.name.en;
 
         const card = createCard(data);
         item.append(card);

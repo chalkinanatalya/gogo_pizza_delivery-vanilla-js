@@ -50,9 +50,9 @@
       },
       "img": ["img/margherita.png", "img/margherita.webp"],
       "price": {
-        "25cm": 400,
-        "30cm": 500,
-        "35cm": 600
+        "25cm": 40,
+        "30cm": 50,
+        "35cm": 60
       },
       "toppings": {
         "en": "tomatoes, mozzarella, basil",
@@ -67,9 +67,9 @@
       },
       "img": ["img/pepperoni.png", "img/pepperoni.webp"],
       "price": {
-        "25cm": 450,
-        "30cm": 550,
-        "35cm": 650
+        "25cm": 45,
+        "30cm": 55,
+        "35cm": 65
       },
       "toppings": {
         "en": "pepperoni, mozzarella",
@@ -84,9 +84,9 @@
       },
       "img": ["img/seafood.png", "img/seafood.webp"],
       "price": {
-        "25cm": 500,
-        "30cm": 600,
-        "35cm": 700
+        "25cm": 50,
+        "30cm": 60,
+        "35cm": 70
       },
       "toppings": {
         "en": "seafood, mozzarella, olives",
@@ -101,9 +101,9 @@
       },
       "img": ["img/fourcheese.png", "img/fourcheese.webp"],
       "price": {
-        "25cm": 480,
-        "30cm": 580,
-        "35cm": 680
+        "25cm": 48,
+        "30cm": 58,
+        "35cm": 68
       },
       "toppings": {
         "en": "gouda, blue_cheese, parmesan, mozzarella",
@@ -118,9 +118,9 @@
       },
       "img": ["img/capricciosa.png", "img/capricciosa.webp"],
       "price": {
-        "25cm": 470,
-        "30cm": 570,
-        "35cm": 670
+        "25cm": 47,
+        "30cm": 57,
+        "35cm": 67
       },
       "toppings": {
         "en": "ham, mushrooms, mozzarella, olives",
@@ -135,9 +135,9 @@
       },
       "img": ["img/mushroom.png", "img/mushroom.webp"],
       "price": {
-        "25cm": 460,
-        "30cm": 560,
-        "35cm": 660
+        "25cm": 46,
+        "30cm": 56,
+        "35cm": 66
       },
       "toppings": {
         "en": "mushrooms, mozzarella, onion, bell_pepper",
@@ -152,9 +152,9 @@
       },
       "img": ["img/ham.png", "img/ham.webp"],
       "price": {
-        "25cm": 470,
-        "30cm": 570,
-        "35cm": 670
+        "25cm": 47,
+        "30cm": 57,
+        "35cm": 67
       },
       "toppings": {
         "en": "ham, mozzarella, olives, bell_pepper",
@@ -169,9 +169,9 @@
       },
       "img": ["img/teriyaki.png", "img/teriyaki.webp"],
       "price": {
-        "25cm": 480,
-        "30cm": 580,
-        "35cm": 680
+        "25cm": 48,
+        "30cm": 58,
+        "35cm": 68
       },
       "toppings": {
         "en": "teriyaki_chicken, mozzarella, onion, bell_pepper",
@@ -186,9 +186,9 @@
       },
       "img": ["img/hawaiian.png", "img/hawaiian.webp"],
       "price": {
-        "25cm": 470,
-        "30cm": 570,
-        "35cm": 670
+        "25cm": 47,
+        "30cm": 57,
+        "35cm": 67
       },
       "toppings": {
         "en": "ham, pineapple, mozzarella, olives",
@@ -203,9 +203,9 @@
       },
       "img": ["img/neapolitan.png", "img/neapolitan.webp"],
       "price": {
-        "25cm": 490,
-        "30cm": 590,
-        "35cm": 690
+        "25cm": 49,
+        "30cm": 59,
+        "35cm": 69
       },
       "toppings": {
         "en": "capers, anchovies, mozzarella, oregano",

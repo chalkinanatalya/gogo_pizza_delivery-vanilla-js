@@ -31,13 +31,20 @@ app.get('/api/products', async (req, res) => {
         )
       : data.pizzas;
 
-  const productsWithImages = filteredProducts.map(product => {
-    const images = product.img.map(img => `https://${req.get('host')}/${img}`);
+  // const productsWithImages = filteredProducts.map(product => {
+  //   const images = product.img.map(img => `https://${req.get('host')}/${img}`);
 
-    //const images = product.img.map(img => `${req.protocol}://${req.get('host')}/${img}`);
+  //   //const images = product.img.map(img => `${req.protocol}://${req.get('host')}/${img}`);
+  //   const { img, ...productWithoutImg } = product;
+  //   return { ...productWithoutImg, images };
+  // });
+
+  const productsWithImages = filteredProducts.map(product => {
+    const images = product.img.map(img => `http://${req.get('host')}/${img}`);
     const { img, ...productWithoutImg } = product;
     return { ...productWithoutImg, images };
   });
+
 
   res.json(productsWithImages);
 });
