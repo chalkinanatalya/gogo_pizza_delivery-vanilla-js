@@ -10,7 +10,7 @@ const createCard = (data) => {
             <img class="card__image" src="${data.images[0]}" alt="${data.name.en}">
         </picture>
         <div class="card__content">
-            <h3 class="card__title">${data.name.en}</h3>
+            <h3 class="card__title">${data.name.en.toUpperCase()}</h3>
             <p class="card__info">
                 <span class="card__price">${data.price['30cm']}$</span>
                 <span>/</span>
@@ -23,8 +23,11 @@ const createCard = (data) => {
     return card;
 }
 
-export const renderPizzas = async () => {
-    const pizzas = await getData('http://localhost:3000/api/products');
+export const renderPizzas = async (toppings) => {
+    const pizzas = await getData(`http://localhost:3000/api/products${
+        toppings ? `?toppings=${toppings}` : ''
+    }`
+    );
     const pizzasList = document.querySelector('.pizza__list');
     pizzasList.textContent = '';
 
@@ -41,3 +44,4 @@ export const renderPizzas = async () => {
 
     pizzasList.append(...items);
 };
+
