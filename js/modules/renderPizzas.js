@@ -34,7 +34,6 @@ export const renderPizzas = async (toppings) => {
     const items = pizzas.map( (data) => {
         const item = document.createElement('li');
         item.classList.add('pizza__item');
-        // item.textContent = data.name.en;
 
         const card = createCard(data);
         item.append(card);
