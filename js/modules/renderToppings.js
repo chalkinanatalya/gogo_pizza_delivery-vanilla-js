@@ -29,6 +29,10 @@ export const renderToppings = async () => {
 
     itemReset.append(btnReset);
 
+    // btnReset.addEventListener('click', () => {
+    //     itemReset.remove();
+    // })
+
     const toppingsForm = document.querySelector('.toppings__form');
     toppingsForm.addEventListener('change', (e) => {
         const formData = new FormData(toppingsForm);
@@ -39,6 +43,17 @@ export const renderToppings = async () => {
         }
 
         renderPizzas(checkedToppings);
+
+        if(checkedToppings.length) {
+            toppingsList.append(itemReset);
+        } else {
+            itemReset.remove();
+        }
     });
+
+    btnReset.addEventListener('click', () => {
+        itemReset.remove();
+        toppingsForm.reset();
+    })
 
 }
