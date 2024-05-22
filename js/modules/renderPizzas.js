@@ -1,5 +1,11 @@
 import { getData } from "./getData.js";
 
+const btnReset = document.createElement('button');
+btnReset.classList.add('pizza__reset-toppings');
+btnReset.textContent = 'Reset filter';
+btnReset.type = 'reset';
+btnReset.setAttribute('form', 'toppings');
+
 const createCard = (data) => {
     console.log('data: ', data);
     const card = document.createElement('article');
@@ -28,19 +34,26 @@ export const renderPizzas = async (toppings) => {
         toppings ? `?toppings=${toppings}` : ''
     }`
     );
+
+    const pizzaTitle = document.querySelector('.pizza__title');
     const pizzasList = document.querySelector('.pizza__list');
     pizzasList.textContent = '';
 
-    const items = pizzas.map( (data) => {
-        const item = document.createElement('li');
-        item.classList.add('pizza__item');
+    if(pizzas.length) {
+        pizzaTitle.textContent = 'Pizza';
+        const items = pizzas.map( (data) => {
+            const item = document.createElement('li');
+            item.classList.add('pizza__item');
+    
+            const card = createCard(data);
+            item.append(card);
+    
+            return item;
+        });
+        pizzasList.append(...items);
+    } else {
+        pizzaTitle.textContent = `Whoops, we don't have this pizza :(`
+    }
 
-        const card = createCard(data);
-        item.append(card);
-
-        return item;
-    });
-
-    pizzasList.append(...items);
 };
 
