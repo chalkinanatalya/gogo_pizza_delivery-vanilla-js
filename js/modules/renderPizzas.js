@@ -6,6 +6,7 @@ btnReset.textContent = 'Reset filter';
 btnReset.type = 'reset';
 btnReset.setAttribute('form', 'toppings');
 
+
 const createCard = (data) => {
     console.log('data: ', data);
     const card = document.createElement('article');
@@ -41,6 +42,7 @@ export const renderPizzas = async (toppings) => {
 
     if(pizzas.length) {
         pizzaTitle.textContent = 'Pizza';
+        btnReset.remove();
         const items = pizzas.map( (data) => {
             const item = document.createElement('li');
             item.classList.add('pizza__item');
@@ -52,8 +54,15 @@ export const renderPizzas = async (toppings) => {
         });
         pizzasList.append(...items);
     } else {
-        pizzaTitle.textContent = `Whoops, we don't have this pizza :(`
+        pizzaTitle.textContent = `Whoops, we don't have this pizza :(`;
+        pizzaTitle.after(btnReset);
+
     }
 
 };
+
+btnReset.addEventListener('click', () => {
+    renderPizzas();
+    document.querySelector('.toppings__reset').remove();
+})
 
