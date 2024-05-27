@@ -89,24 +89,26 @@
                 <span class="modal-pizza__size">25sm</span>
             </p>
             <form class="modal-pizza__form">
-                <fieldset class="modal-pizza__fieldset">
-                    <input class="modal-pizza__checkbox" id="thick" type="radio" value="thick" name="crust">
-                    <label class="modal-pizza__label" for="thick">Deep dish crust</label>
-
-                    <input class="modal-pizza__checkbox" id="thin" type="radio" value="thin" name="crust" checked>
-                    <label class="modal-pizza__label" for="thin">Thin crust</label>
-                </fieldset>
-
-                <fieldset class="modal-pizza__fieldset">
-                    <input class="modal-pizza__checkbox" id="25cm" type="radio" value="25cm" name="size checked">
-                    <label class="modal-pizza__label" for="25cm">25 sm</label>
-
-                    <input class="modal-pizza__checkbox" id="30cm" type="radio" value="30cm" name="size">
-                    <label class="modal-pizza__label" for="30cm">30 sm</label>
-
-                    <input class="modal-pizza__checkbox" id="35cm" type="radio" value="35cm" name="size">
-                    <label class="modal-pizza__label" for="35cm">35 sm</label>
-                </fieldset>
+                <div class="modal-pizza__group-fieldset">
+                    <fieldset class="modal-pizza__fieldset">
+                        <input class="modal-pizza__radio" id="thick" type="radio" value="thick" name="crust">
+                        <label class="modal-pizza__label" for="thick">Deep dish crust</label>
+    
+                        <input class="modal-pizza__radio" id="thin" type="radio" value="thin" name="crust" checked>
+                        <label class="modal-pizza__label" for="thin">Thin crust</label>
+                    </fieldset>
+    
+                    <fieldset class="modal-pizza__fieldset">
+                        <input class="modal-pizza__radio" id="25cm" type="radio" value="25cm" name="size checked">
+                        <label class="modal-pizza__label" for="25cm">25 sm</label>
+    
+                        <input class="modal-pizza__radio" id="30cm" type="radio" value="30cm" name="size">
+                        <label class="modal-pizza__label" for="30cm">30 sm</label>
+    
+                        <input class="modal-pizza__radio" id="35cm" type="radio" value="35cm" name="size">
+                        <label class="modal-pizza__label" for="35cm">35 sm</label>
+                    </fieldset>
+                </div>
                 <button class="modal-pizza__add-cart">To cart</button>
             </form>
             <button class="modal__close">
