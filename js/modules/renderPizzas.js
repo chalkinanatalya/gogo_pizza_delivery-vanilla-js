@@ -1,5 +1,6 @@
 import { getData } from "./getData.js";
 import { modalController } from "./modalController.js";
+import { renderModalPizza } from "./renderModalPizza.js";
 
 const btnReset = document.createElement('button');
 btnReset.classList.add('pizza__reset-toppings');
@@ -9,7 +10,6 @@ btnReset.setAttribute('form', 'toppings');
 
 
 const createCard = (data) => {
-    console.log('data: ', data);
     const card = document.createElement('article');
     card.classList.add('card', 'pizza__card');
     card.innerHTML = `
@@ -57,7 +57,14 @@ export const renderPizzas = async (toppings) => {
         modalController({
             modal: '.modal-pizza',
             btnOpen: '.card__button', 
-            btnClose: '.modal__close'
+            btnClose: '.modal__close',
+            async cbOpen(btnOpen) {
+                const pizza = await getData(
+                    `http://localhost:3000/api/products/${btnOpen.dataset.id}`,
+                );
+                renderModalPizza(pizza);
+                console.log('pizza: ', pizza);
+            }
         })
     } else {
         pizzaTitle.textContent = `Whoops, we don't have this pizza :(`;
